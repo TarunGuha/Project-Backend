@@ -4,13 +4,13 @@ import nltk
 from nltk.corpus import stopwords
 from PIL import Image
 from caption_service.helpers import clean_caption
-# from transformers import BlipProcessor, BlipForConditionalGeneration
+from transformers import BlipProcessor, BlipForConditionalGeneration
 
 class CaptionClient:
 
     def __init__(self):
-        self.model = pickle.load(open('model.pkl', 'rb'))
-        self.processor = pickle.load(open('processor.pkl','rb'))
+        self.model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large")
+        self.processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
         nltk.download('stopwords')
         self.fillers = (stopwords.words('english'))
 
