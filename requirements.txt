@@ -5,3 +5,4 @@ wget==3.2
 nltk==3.8.1
 Pillow==9.5.0
 boto3==1.26.137
+torchvision==0.15.2
