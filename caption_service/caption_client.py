@@ -9,8 +9,8 @@ from caption_service.helpers import clean_caption
 class CaptionClient:
 
     def __init__(self):
-        self.model = pickle.load(open('model.pkl', 'wb'))
-        self.processor = pickle.load(open('processor.pkl','wb'))
+        self.model = pickle.load(open('model.pkl', 'rb'))
+        self.processor = pickle.load(open('processor.pkl','rb'))
         nltk.download('stopwords')
         self.fillers = (stopwords.words('english'))
 
