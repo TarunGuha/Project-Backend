@@ -1,10 +1,6 @@
-import boto3
-import io
-import pickle
-from transformers import BlipProcessor, BlipForConditionalGeneration
+import wget
 
-processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
-model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large")
-
-pickle.dump(processor,open('processor.pkl','wb'))
-pickle.dump(model,open('model.pkl','wb'))
+wget.download(
+        "https://image-caption-1.s3.ap-south-1.amazonaws.com/model.pkl")
+wget.download(
+        'https://image-caption-1.s3.ap-south-1.amazonaws.com/processor.pkl')
