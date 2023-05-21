@@ -34,6 +34,6 @@ def clean_caption(input_text, fillers):
 
 def download_model():
     wget.download(
-        'https://drive.google.com/uc?export=view&id=1KJ50-zxUqiJlmdQLikBLpp3wa-a33bTR')
+        "https://download1508.mediafire.com/voixmr76cs1ggnx_jesA210-zUO7IqsK8OUPMF8mEII9OorFBHIM6LwB0iziAuw0azRLBKRrTRbRdjnWY93hrdccJXgPiQNdoKWpjBJHARch8LWZNg9CTa0XnaDZuuiE6kpMcJMMhIi3W0P1BhamMyQiYQoRtGDLmjbI-E4RdTTdOXQ/7zjzmtodriha62c/model.pkl")
     wget.download(
-        'https://drive.google.com/uc?export=view&id=1bkZ8NvrPaWnrHE93AtLpbBqqm78vwu_l')
+        'https://drive.google.com/uc?export=view&id=1KJ50-zxUqiJlmdQLikBLpp3wa-a33bTR')
