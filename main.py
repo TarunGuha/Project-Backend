@@ -28,7 +28,7 @@ class image_data(BaseModel):
 
 @app.on_event("startup")
 def startup():
-    download_model()
+    # download_model()
     initialize_caption()
 
 
